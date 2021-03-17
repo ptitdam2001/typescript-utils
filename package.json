@@ -1,0 +1,10 @@
+{
+  "name": "typescript-utils",
+  "version": "0.1.0",
+  "description": "Pool of classes or function used in typescript",
+  "main": "index.js",
+  "repository": "git@github.com:ptitdam2001/typescript-utils.git",
+  "author": "Damien Suhard <ptitdam2001@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
