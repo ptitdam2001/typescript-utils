@@ -5,10 +5,23 @@
  */
 export abstract class EventHandler extends EventTarget {
 	private eventNames: string[] = []
+	private delegate = document.createDocumentFragment()
 
 	constructor() {
 		super()
 	}
+	
+	addEventListener(...args: any): void {
+           this.delegate.addEventListener.apply(this.delegate, args);
+        }
+
+        dispatchEvent(...args: any): boolean {
+           return this.delegate.dispatchEvent.apply(this.delegate, args);
+        }
+
+        removeEventListener(...args: any): void {
+           return this.delegate.removeEventListener.apply(this.delegate, args);
+        }
 
 	/**
 	 * @name dispatchChange
