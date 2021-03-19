@@ -1,1 +1,1 @@
-export * from './src/EventHandler.class'
+export * from './src/patterns/Observable'
