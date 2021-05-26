@@ -1,4 +1,4 @@
-import { AbstractObservable, IObservable, IObserver } from "./Observable";
+import { AbstractObservable, IObserver } from './Observable';
 
 class MyClass extends AbstractObservable {
 	public name: string = '';
